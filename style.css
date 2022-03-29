@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*general stuff: applies to more than one section*/
+body{
+  background-color: greenyellow;
+}
+
+/*general stuff end*/
+
+/*hero start*/
+.hero{
+  /* background-image: url(img/hero.jpg); */
+  font-size: 4rem;
+  padding: 3rem;
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+}
+/*hero end*/
+
+/*dices start*/
+.dice-container{
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.dice{
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+}
+/*dices end*/
+
+/*button starts*/
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+button {
+  border:none;
+  background-color: white;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/*button ends*/
+
+/*footer starts*/
+.center{
+  background-color: white;
+  height: 3rem;
+  padding: 1rem;
+  display:flex;
+  justify-content: center;
+}
+/*footer ends*/
