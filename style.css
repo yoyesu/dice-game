@@ -6,19 +6,54 @@
 
 /*general stuff: applies to more than one section*/
 body{
-  background-color: greenyellow;
+  background-color: rgb(252, 255, 47);
 }
-
+a{
+  color: white;
+  text-decoration: none;
+}
+h1{
+  color: white;
+  text-shadow: 3px 3px black;
+  text-transform: capitalize;
+}
 /*general stuff end*/
 
+/*header start*/
+header{
+  background-color: black;
+}
+/*header end*/
+/*dropdown start*/
+.lang-dropdown{
+  padding: 0.5rem;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.dropdown-content{
+  display:none;
+  background-color: grey;
+  margin-right: auto;
+}
+.dropdown-content a{
+  display: block;
+}
+.nav-option{
+  margin-left: auto;
+}
+.lang-dropdown:hover .dropdown-content {
+  display: block;
+}
+/*dropdown end*/
 /*hero start*/
 .hero{
-  /* background-image: url(img/hero.jpg); */
+  background-image: url(img/hero.jpg);
+  background-size: contain;
   font-size: 4rem;
   padding: 3rem;
   display: flex;
   text-align: center;
-  border: 1px solid black;
 }
 /*hero end*/
 
@@ -31,10 +66,16 @@ body{
 .rules-container h2, h3 {
   padding-bottom: 1rem;
 }
-#good-luck{
-  text-align: center;
+#try-luck{
   font-size: 2rem;
   font-weight: bold;
+  color: black;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+#try-luck:hover{
+  background-color: aquamarine;
 }
 /*rules end*/
 

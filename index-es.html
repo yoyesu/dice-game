@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>El juego de los dados</title>
+</head>
+<body>
+  <header>
+<!--language dropdown start-->
+    <section class='lang-dropdown'>
+      <a href="#" id="lang-btn">Language</a>
+      <div class='dropdown-content'>
+        <a href="index-es.html" id="español">Español</a> <a href="index.html" id="english">English</a>
+      </div>
+      <a href='rules-es.html' class='nav-option'>Reglas</a>
+      <a href='prizes-es.html' class='nav-option'>Premios</a>
+    </section>
+<!--language dropdown end-->
+  </header>
+  <main>
+<!--hero starts-->
+    <section class='hero'>
+      <h1>El juego de los dados</h1>
+    </section>
+<!--hero ends-->
+
+<!--rules start-->
+<section class='rules-container'>
+  <h2>¿Te apetece una partidita a los dados?</h2>
+  <h3>Estas son las reglas:</h3>
+  <ol>
+    <li>Saca un 6 en los dos dados y, ¡¡habrás ganado el juego!!</li>
+    <li>Si sacas el mismo número en los dos dados (por supuesto, un número distinto a 6), tendrás 3 oportunidades más.</li>
+    <li>Si no lo consigues, no te preocupes. Si la suma de ambos dados es un número par, ¡todavía tendrás otra oportunidad de ganar un maravilloso osito! ;) </li>
+    <li>Con cualquier otra combinación habrás perdido. ¡Uhhh!</li>
+  </ol>
+  <br/>
+  <p id='good-luck'>¡Buena suerte!</p>
+</section>
+<!--rules end-->
+    <section class='dice-container'>
+      <article class='dice' id='dice1'></article>
+      <article class='dice' id='dice2'></article>
+  
+    </section>
+
+    <section class='button-container'>
+      <button onclick='diceRoll()'>Lanzar dados</button>
+    </section>
+
+    <section id='result-section'>
+      <h2>Redoble de tambores...</h2>
+      <p id='result-container'></p>
+    </section>
+  </main>
+  <footer>
+    <section class='center'>Este es el pie de página</section>
+  </footer>
+  
+  <script src="app-es.js"></script>
+</body>
+</html>
