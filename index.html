@@ -28,20 +28,18 @@
     </section>
 <!--hero ends-->
 
-<!--rules start-->
-<section class='rules-container'>
-  <h2>Welcome to my dice game!</h2>
-  <h3>Here are the rules</h3>
-  <ol>
-    <li>Roll a 6 on both dices to win the game!!</li>
-    <li>Roll the same number on both dices (other than 6) to win three more free throws!</li>
-    <li>If you don't get repeated numbers, do not despair. If the sum of both dices is even, you'll still have one more chance to win that wonderful bear ;) </li>
-    <li>Any other combination is a lose.</li>
-  </ol>
+<!--form start-->
+<section class='form-container'>
+  <form action="">
+    <label for="firstName">Introduce your name:</label><br><br>
+    <input type="text" id='firstName' maxlength='10'><br><br>
+    <p id='welc-name'></p>
+    <button id='form-btn'>Submit</button>
+  </form>
   <br>
   <p id='good-luck'>Good luck!</p>
 </section>
-<!--rules end-->
+<!--form end-->
     <section class='dice-container'>
       <article class='dice' id='dice1'></article>
       <article class='dice' id='dice2'></article>
@@ -49,7 +47,7 @@
     </section>
 
     <section class='button-container'>
-      <button onclick='diceRoll()'>Click me</button>
+      <button id='dice-roll'>Throw dices</button>
     </section>
 
     <section id='result-section'>
