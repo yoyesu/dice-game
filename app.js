@@ -12,9 +12,9 @@ subBtn.addEventListener('click', event => {
 });
 
 function diceRoll(){
-  let dice1 = Math.floor(Math.random()*6);
+  let dice1 = Math.floor(Math.random()*6+1);
   document.getElementById('dice1').innerHTML = dice1;
-  let dice2 = Math.floor(Math.random()*6);
+  let dice2 = Math.floor(Math.random()*6+1);
     document.getElementById('dice2').innerHTML = dice2;
   if (firstName.value == 0) {
     alert('Please, introduce your name to start playing.');
