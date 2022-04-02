@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Dice game</title>
+  <title>Fungam</title>
 </head>
 <body>
   <header>
@@ -16,47 +16,77 @@
         <a href='index-es.html' id='español'>Español</a>
         <a href='index.html' id='english'>English</a>
       </div>
-      <a href='prizes.html' class='nav-option'>Prizes</a>
+      <a href='prizes.html' class='nav-option'>Contact</a>
     </nav>
 <!--language dropdown end-->
   </header>
   <main>
 <!--hero starts-->
     <section class='hero'>
-      <h1>Dice game</h1>
+      <h1>Fungam</h1>
     </section>
 <!--hero ends-->
 
-<!--form start-->
-<section class='form-container'>
-  <form name='name-form'>
-    <label for="firstName">Introduce your name:</label><br><br>
-    <input type="text" id='firstName' name='nameform' maxlength='10'><br><br>
-    <p id='welc-name'></p>
-    <button id='form-btn'>Submit</button>
-  </form>
-  <br>
-  <p id='good-luck'>Good luck!</p>
+<!--intro start-->
+<h2>Welcome to FunGam!<span>The place to game if you want some fun!</span></h2>
+<p>Chose one of the games below to start playing.</p>
+<!--intro end-->
+
+<!--games catalog start-->
+<section class='games-wrapper'>
+  <article class='dice-card' id='game1'>
+    <section class='game-img'></section>
+    <section class='game-desc'>
+      <h3>Dices</h3>
+      <p>Find out if you're on a roll!</p>
+      <a class='card-btn' href='dices.html'>Let's play</a>
+    </section>
+  </article>
+  <article class='guess-card'>
+    <section class='game-img' id='game2'></section>
+    <section class='game-desc'>
+      <h3>Guess the word</h3>
+      <p>Guess what? You're gonna have fun!</p>
+      <a class='card-btn' href=''>Let's play</a>
+    </section>
+  </article>
+  <article class='guess-card'>
+    <section class='game-img' id='game3'></section>
+    <section class='game-desc'>
+      <h3>TBC</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a class='card-btn' href=''>Let's play</a>
+    </section>
+  </article>
+  <article class='guess-card'>
+    <section class='game-img' id='game4'></section>
+    <section class='game-desc'>
+      <h3>TBC</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a class='card-btn' href=''>Let's play</a>
+    </section>
+  </article>
+  <article class='guess-card'>
+    <section class='game-img' id='game5'></section>
+    <section class='game-desc'>
+      <h3>TBC</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a class='card-btn' href=''>Let's play</a>
+    </section>
+  </article>
+  <article class='guess-card'>
+    <section class='game-img' id='game6'></section>
+    <section class='game-desc'>
+      <h3>TBC</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a class='card-btn' href=''>Let's play</a>
+    </section>
+  </article>
 </section>
-<!--form end-->
-<!--rules start-->
-<section class='rules-container'>
-  <h2>Welcome to my dice game!</h2>
-  <h3>Here are the rules</h3>
-  <ol>
-    <li>Roll a 6 on both dices to win the game!!</li>
-    <li>Roll the same number on both dices (other than 6) to win three more free throws!</li>
-    <li>If you don't get repeated numbers, do not despair. If the sum of both dices is even, you'll still have one more chance to win that wonderful bear ;) </li>
-    <li>Any other combination is a lose.</li>
-  </ol>
-  <br>
-  <a href='game-play.html' id='try-luck'>Try your luck!</a>
-</section>
-<!--rules end-->
-    
+<!--games catalog end-->
   </main>
   <footer>
-    <section class='center'>This is a footer</section>
+    <section class='center'>&copy; FunGam 2022</section>
   </footer>
   
   <script src="index.js"></script>
