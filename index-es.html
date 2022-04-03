@@ -5,61 +5,103 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>El juego de los dados</title>
+  <title>Fungam</title>
 </head>
 <body>
   <header>
 <!--language dropdown start-->
-    <section class='lang-dropdown'>
+    <nav class='lang-dropdown'>
       <a href="#" id="lang-btn">Language</a>
       <div class='dropdown-content'>
         <a href="index-es.html" id="español">Español</a> <a href="index.html" id="english">English</a>
       </div>
-      <a href='rules-es.html' class='nav-option'>Reglas</a>
-      <a href='prizes-es.html' class='nav-option'>Premios</a>
-    </section>
+      <a href="" class="nav-option">Contacto</a>
+    </nav>
 <!--language dropdown end-->
   </header>
   <main>
 <!--hero starts-->
     <section class='hero'>
-      <h1>El juego de los dados</h1>
+      <h1>Fungam<span id="span-h1">¡No podrás parar de jugar!</span></h1>
     </section>
 <!--hero ends-->
 
-<!--rules start-->
-<section class='rules-container'>
-  <h2>¿Te apetece una partidita a los dados?</h2>
-  <h3>Estas son las reglas:</h3>
-  <ol>
-    <li>Saca un 6 en los dos dados y, ¡¡habrás ganado el juego!!</li>
-    <li>Si sacas el mismo número en los dos dados (por supuesto, un número distinto a 6), tendrás 3 oportunidades más.</li>
-    <li>Si no lo consigues, no te preocupes. Si la suma de ambos dados es un número par, ¡todavía tendrás otra oportunidad de ganar un maravilloso osito! ;) </li>
-    <li>Con cualquier otra combinación habrás perdido. ¡Uhhh!</li>
-  </ol>
-  <br/>
-  <p id='good-luck'>¡Buena suerte!</p>
+<!--intro start-->
+<section class='intro'>
+  <h2>¡Que te diviertas en FunGam!</h2>
+  <p>Elige uno de los siguientes juegos para comenzar.</p>
 </section>
-<!--rules end-->
-    <section class='dice-container'>
-      <article class='dice' id='dice1'></article>
-      <article class='dice' id='dice2'></article>
-  
-    </section>
+<!--intro end-->
 
-    <section class='button-container'>
-      <button onclick='diceRoll()'>Lanzar dados</button>
+<!--games catalog start-->
+<section class='games-wrapper'>
+  <article class='game-card' id='game1'>
+    <section class='game-img'>
+      <img class="card-img" src="img/dice-card.jpg" alt="imagen de dados"/>
     </section>
-
-    <section id='result-section'>
-      <h2>Redoble de tambores...</h2>
-      <p id='result-container'></p>
+    <section class='game-desc'>
+      <h3>Dados</h3>
+      <p>¡Lánzate a jugar!</p>
+      <a class="card-btn" href="dices-es.html">¡A jugar!</a>
     </section>
+  </article>
+  <article class='game-card'>
+    <section class='game-img' id='game2'>
+      <img class="card-img" src="img/guess-card.jpg" alt="imagen de letras"/>
+    </section>
+    <section class='game-desc'>
+      <h3>Adivina la palabra</h3>
+      <p>¿Adivina qué? ¡Que de queso!</p>
+      <a class="card-btn" href="">¡A jugar!</a>
+    </section>
+  </article>
+  <article class='game-card'>
+    <section class='game-img' id='game3'>
+      <img class="card-img" src="img/tbc.png" alt=""/>
+    </section>
+    <section class='game-desc'>
+      <h3>Próximamente</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a class="card-btn" href="">¡A jugar!</a>
+    </section>
+  </article>
+  <article class='game-card'>
+    <section class='game-img' id='game4'>
+      <img class="card-img" src="img/tbc.png" alt=""/>
+    </section>
+    <section class='game-desc'>
+      <h3>Próximamente</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a class="card-btn" href="">¡A jugar!</a>
+    </section>
+  </article>
+  <article class='game-card'>
+    <section class='game-img' id='game5'>
+      <img class="card-img" src="img/tbc.png" alt=""/>
+    </section>
+    <section class='game-desc'>
+      <h3>Próximamente</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a class="card-btn" href="">¡A jugar!</a>
+    </section>
+  </article>
+  <article class='game-card'>
+    <section class='game-img' id='game6'>
+      <img class="card-img" src="img/tbc.png" alt=""/>
+    </section>
+    <section class='game-desc'>
+      <h3>Próximamente</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a class="card-btn" href="">¡A jugar!</a>
+    </section>
+  </article>
+</section>
+<!--games catalog end-->
   </main>
   <footer>
-    <section class='center'>Este es el pie de página</section>
+    <section class='center'>© FunGam 2022</section>
   </footer>
   
-  <script src="app-es.js"></script>
+  <script src="index-es.js"></script>
 </body>
 </html>

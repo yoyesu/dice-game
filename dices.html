@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Dice game</title>
 </head>
-<body>
+<body id='orange-background'>
   <header>
 <!--language dropdown start-->
     <nav class='lang-dropdown'>
@@ -17,13 +17,13 @@
         <a href='index.html' id='english'>English</a>
       </div>
       <a href='index.html' class='nav-option' id='nav-rules'>Home</a>
-      <a href='prizes.html' class='nav-option'>Prizes</a>
+      <a href='' class='nav-option'>Contact</a>
     </nav>
 <!--language dropdown end-->
   </header>
   <main>
 <!--hero starts-->
-    <section class='hero'>
+    <section class='hero' id='hero2'>
       <h1>Dice game</h1>
     </section>
 <!--hero ends-->
@@ -38,14 +38,14 @@
     <li>Any other combination is a lose.</li>
   </ol>
   <br>
-  <p>Good luck!</p>
+  <p id='good-messa'>Good luck!</p>
 </section>
 <!--rules end-->
+
 <!--dice start-->
 <section class='dice-container'>
   <article class='dice' id='dice1'></article>
   <article class='dice' id='dice2'></article>
-
 </section>
 
 <section class='button-container'>
@@ -59,11 +59,11 @@
   <p id='result-container'></p>
 </section>
 <!--result end-->
-  </main>
-  <footer>
-    <section class='center'>&copy; FunGam 2022</section>
-  </footer>
-  
+</main>
+<footer>
+  <section class='center'>&copy; FunGam 2022</section>
+</footer>
+
   <script src="dices.js"></script>
 </body>
 </html>

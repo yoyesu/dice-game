@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>¿Qué te ha dado?</title>
+</head>
+<body id='orange-background'>
+  <header>
+<!--language dropdown start-->
+    <nav class='lang-dropdown'>
+      <a href="#" id="lang-btn">Language</a>
+      <div class='dropdown-content'>
+        <a href="index-es.html" id="español">Español</a> <a href="index.html" id="english">English</a>
+      </div>
+      <a href="index-es.html" class="nav-option" id="nav-rules">Inicio</a> 
+      <a href="" class="nav-option">Contacto</a>
+    </nav>
+<!--language dropdown end-->
+  </header>
+  <main>
+<!--hero starts-->
+    <section class='hero' id='hero2-es'>
+      <h1>¿Qué te ha dado?</h1>
+    </section>
+<!--hero ends-->
+<!--rules start-->
+<section class='rules-container'>
+  <h2 id='welc-messa'></h2>
+  <h3>Estas son las reglas:</h3>
+  <ol>
+    <li>Saca un 6 en los dos dados y, ¡¡habrás ganado el juego!!</li>
+    <li>Si sacas el mismo número en los dos dados (por supuesto, un número distinto a 6), tendrás 3 oportunidades más.</li>
+    <li>Si no lo consigues, no te preocupes. Si la suma de ambos dados es un número par, ¡todavía tendrás otra oportunidad de ganar un maravilloso osito! ;) </li>
+    <li>Con cualquier otra combinación habrás perdido. ¡Uhhh!</li>
+  </ol>
+  <br/>
+  <p id='good-messa'>¡Buena suerte!</p>
+</section>
+<!--rules end-->
+
+<!--dice start-->
+<section class='dice-container'>
+  <article class='dice' id='dice1'></article>
+  <article class='dice' id='dice2'></article>
+</section>
+
+<section class='button-container'>
+  <button id='dice-roll'>Lanzar dados</button>
+</section>
+<!--dice end-->
+
+<!--result start-->
+<section id='result-section'>
+  <h2>Redoble de tambores...</h2>
+  <p id='result-container'></p>
+</section>
+<!--result end-->
+</main>
+<footer>
+  <section class='center'>© FunGam 2022</section>
+</footer>
+
+  <script src="dices-es.js"></script>
+</body>
+</html>
