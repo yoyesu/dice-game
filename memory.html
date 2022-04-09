@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Memory game</title>
+</head>
+<body id='orange-background'>
+  <header>
+<!--language dropdown start-->
+    <nav class='lang-dropdown'>
+      <a href="#" id='lang-btn'>Idioma</a>
+      <div class='dropdown-content'>
+        <a href='index-es.html' id='español'>Español</a>
+        <a href='index.html' id='english'>English</a>
+      </div>
+      <a href='index.html' class='nav-option' id='nav-rules'>Home</a>
+      <a href='' class='nav-option'>Contact</a>
+    </nav>
+<!--language dropdown end-->
+  </header>
+  <main>
+<!--hero starts-->
+    <section class='hero' id='hero2'>
+      <h1>Memory game</h1>
+    </section>
+<!--hero ends-->
+<!--rules start-->
+<section class='rules-container'>
+  <h2 id='welc-messa'></h2>
+  <h3>Here are the rules</h3>
+  <ol>
+    <li>Roll a 6 on both dices to win the game!!</li>
+    <li>Roll the same number on both dices (other than 6) to win three more free throws!</li>
+    <li>If you don't get repeated numbers, do not despair. If the sum of both dices is even, you'll still have one more chance to win that wonderful bear ;) </li>
+    <li>Any other combination is a lose.</li>
+  </ol>
+  <br>
+  <p id='good-messa'>Good luck!</p>
+</section>
+<!--rules end-->
+
+
+<!--result start-->
+<section id='result-section'>
+  <h2>Drum roll...</h2>
+  <p id='result-container'></p>
+</section>
+<!--result end-->
+</main>
+<footer>
+  <section class='center'>&copy; FunGam 2022</section>
+</footer>
+
+  <script src="./memory.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#form-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: normal;
+}
+.container {
+  width: 400px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  margin: 30px auto;
+}
+#contactForm {
+  padding: 25px;
+  
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: #1ac0f3;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:black;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="forms.css">
+  <title>Fungam</title>
+</head>
+<body>
+  <header>
+<!--language dropdown start-->
+    <nav class='lang-dropdown'>
+      <a href="#" id='lang-btn'>Idioma</a>
+      <div class='dropdown-content'>
+        <a href='index-es.html' id='español'>Español</a>
+        <a href='index.html' id='english'>English</a>
+      </div>
+      <a href='prizes.html' class='nav-option'>Contact</a>
+    </nav>
+<!--language dropdown end-->
+  </header>
+  <main>
+<!--hero starts-->
+    <section class='hero'>
+      <h1>Fungam<span id='span-h1'>The place to game if you want some fun!</span></h1>
+    </section>
+<!--hero ends-->
+
+<!--intro start-->
+<section class='intro'>
+  <h2>Welcome to FunGam!</h2>
+  <p>Sign up now to start playing!</p><br>
+  <p>Been here before? <a href='./login-form.html'>Log in</a> now.</p>
+</section>
+<!--intro end-->
+
+<!--sign-up form start-->
+<div class="container">
+  <form id="contactForm" action="">
+    <h2 id='form-title'>Sign up</h2>
+    <label for="username">Username</label>
+
+    <input type="text" id="username" name="username" maxlength="12" />
+
+    <label for="password">Password</label>
+
+    <input type="password" id="password" name="password" />
+
+    <input type="submit" value="Sign up" id="submit"/>
+  </form>
+</div>
+<!--sign-up form end-->
+  </main>
+  <footer>
+    <section class='center'>&copy; FunGam 2022</section>
+  </footer>
+  
+  <script src="index.js"></script>
+</body>
+</html>
