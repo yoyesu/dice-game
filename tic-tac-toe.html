@@ -6,40 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/tic-tac-toe.css">
+  <script
+      src="https://kit.fontawesome.com/2eb9dd0896.js"
+      crossorigin="anonymous"
+    ></script>
   <title>Hit that toe (tic-tac-toe)</title>
 </head>
 <body id='orange-background'>
   <header>
-<!--language dropdown start-->
-    <nav class='lang-dropdown'>
-      <a href="#" id='lang-btn'>Idioma</a>
-      <div class='dropdown-content'>
-        <a href='.tic-tac-toe-es.html' id='español'>Español</a>
-        <a href='.tic-tac-toe.html' id='english'>English</a>
-      </div>
-      <a href='.index.html' class='nav-option' id='nav-rules'>Home</a>
-      <a href='' class='nav-option'>Contact</a>
-    </nav>
-<!--language dropdown end-->
+<!--nav start-->
+<nav>
+  <i class="fa-solid fa-globe" id='lang-icon'>
+  <div class='dropdown' id="lang-drop">
+  <div class="dropdown-content" >
+      <a href="tic-tac-toe-es.html" id="español">Español</a>
+      <a href="tic-tac-toe.html" id="english">English</a>
+    </div>
+  </div>
+  </i> 
+
+  <a href='index.html'><i class="fa-solid fa-house"></i></a>
+
+  <i class="fa-solid fa-bars" id='pag-icon'>
+  <div class='dropdown' id="pages-drop">
+  <div class="dropdown-content" id='content-pages'>
+      <a href="./contact.html" class="nav-option">Contact</a>
+      <a href="./login-form.html" class="nav-option">Log in</a>
+      <a href="./signup-form.html" class="nav-option">Sign up</a>
+    </div>
+  </div>
+  </i>
+</nav>
+<!--nav end-->
   </header>
   <main>
 <!--hero starts-->
-    <section class='hero' id='hero2'>
-      <h1>Hit that toe</h1>
+    <section class='hero' id='hero-ttt'>
+      <h1 id='ttt-h1'>Hit that <span>toe</span></h1>
     </section>
 <!--hero ends-->
 
-<!-- <h3>Score: <span id='result'></span></h3> -->
+<!--rules start-->
+<section class='rules-container' id='rules-memory'>
+  <h3>Before you start:</h3>
+  <p>Rules are simple: connect three in a row before the computer does!<br>Go hit those toes!!</p>
+  <br>
+  <p id='good-messa'></p>
+</section>
+<!--rules end-->
 
+<!--game starts-->
 <section class='grid'>
 
 </section>
+<div id='reset-btn-container'>
+  <button id='reset-btn'>Reset</button>
 
+</div>
+<!--game ends-->
 
 <!--result start-->
-<section id='result-section'>
+<section id='result-section-ttt'>
   <h2 id='result-container'></h2>
-  <button id='reset-btn'>Reset</button>
 </section>
 <!--result end-->
 </main>
@@ -48,5 +76,6 @@
 </footer>
 
   <script src="./js/tic-tac-toe.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>

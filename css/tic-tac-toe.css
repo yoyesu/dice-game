@@ -1,13 +1,50 @@
+#hero-ttt{
+  background-image: url(../img/tic-tac-toe/ttt-hero.png);
+}
+#ttt-h1{
+  color:black;
+  text-shadow: 3px 3px white;
+}
+
+#ttt-h1 span{
+  color:white;
+  text-shadow: 3px 3px black;
+}
+
+#rules-memory {
+  background-color: rgb(248, 224, 145);
+  border: 3px dotted rgb(218, 142, 1);
+  margin: 2rem;
+  border-radius: 10px;
+}
 .grid{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin: 3rem 0 1.5rem;
 }
 
 .square-style {
   border: 1px solid black;
   width: 100px;
   height: 100px;
-  /* background-color: white; */
+  background-color: white;
+}
+
+#result-section-ttt{
+  background-color: rgb(248, 224, 145);
+  width: 90%;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 3rem;
+  margin: 0 auto;
+  border: 3px dotted rgb(218, 142, 1);
+  border-radius: 10px;
+}
+#reset-btn-container{
+  display: flex;
+  justify-content: center;
 }

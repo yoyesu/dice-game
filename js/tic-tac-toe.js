@@ -37,15 +37,9 @@ function leaveMark(){
 }
 
 /////turns////////
-// function render() {
-//   squaresArray.forEach(function(mark, index){
-//   console.log(mark, index);
-//   });
-//   };
-// squaresArray[leaveMark] = turn;
 
 function computerTurn(){
-  var randomId = Math.floor((Math.random()*imgId.length));
+  let randomId = Math.floor((Math.random()*imgId.length));
   let randomIdString = randomId.toString();
   console.log(randomIdString);
   console.log(typeof randomIdString);
@@ -53,14 +47,23 @@ function computerTurn(){
   if (!takenId.includes(randomIdString)){
     toes[randomId].setAttribute('src','img/tic-tac-toe/boots.png');
     takenId.push(randomIdString);
-  } else {
-    var randomId = Math.floor((Math.random()*imgId.length));
+  } else if (takenId.length === imgId.length){
+    
+  } else{
+      computerTurn();
+    }
   }
-}
 
 console.log(takenId);
 
+///reset button////
 
+let resetBtn = document.querySelector('#reset-btn');
+resetBtn.addEventListener('click', resetFunction);
+function resetFunction(){
+  let toes = document.querySelectorAll('img');
+  toes.foreach().setAttribute('src', 'img/tic-tac-toe/toe.png');
+}
 ticTacBoard();
 
 
