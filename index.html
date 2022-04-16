@@ -1,110 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Fungam</title>
-</head>
-<body>
-  <header>
-<!--language dropdown start-->
-    <nav class='lang-dropdown'>
-      <a href="#" id='lang-btn'>Idioma</a>
-      <div class='dropdown-content'>
-        <a href='index-es.html' id='español'>Español</a>
-        <a href='index.html' id='english'>English</a>
-      </div>
-      <a href='./prizes.html' class='nav-option'>Contact</a>
-      <a href='./login-form.html' class='nav-option'>Log in</a>
-      <a href='./signup-form.html' class='nav-option'>Sign up</a>
-    </nav>
-<!--language dropdown end-->
-  </header>
-  <main>
-<!--hero starts-->
-    <section class='hero'>
-      <h1><a href='./index.html'>FunGam</a><span id='span-h1'>The place to game if you want some fun!</span></h1>
-    </section>
-<!--hero ends-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2eb9dd0896.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fungam - Games page</title>
+  </head>
+  <body>
+    <header>
+      <!--nav start-->
+      <nav>
+        <i class="fa-solid fa-globe" id='lang-icon'>
+        <div class='dropdown' id="lang-drop">
+        <div class="dropdown-content" >
+            <a href="index-es.html" id="español">Español</a>
+            <a href="index.html" id="english">English</a>
+          </div>
+        </div>
+        </i> 
 
-<!--intro start-->
-<section class='intro'>
-  <h2>Welcome to FunGam!</h2>
-  <p>Choose one of the games below to start playing.</p>
-</section>
-<!--intro end-->
+        <i class="fa-solid fa-bars" id='pag-icon'>
+        <div class='dropdown' id="pages-drop">
+        <div class="dropdown-content" id='content-pages'>
+            <a href="./contact.html" class="nav-option">Contact</a>
+            <a href="./login-form.html" class="nav-option">Log in</a>
+            <a href="./signup-form.html" class="nav-option">Sign up</a>
+          </div>
+        </div>
 
-<!--games catalog start-->
-<section class='games-wrapper'>
-  <article class='game-card' id='game1'>
-    <section class='game-img'>
-      <img class='card-img' src="img/dice-card.jpg" alt="picture of dices">
-    </section>
-    <section class='game-desc'>
-      <h3>Dices</h3>
-      <p>Find out if you're on a roll!</p>
-      <a class='card-btn' href='dices.html'>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game2'>
-      <img class='card-img' src="img/guess-card.jpg" alt="picture of letters">
-    </section>
-    <section class='game-desc'>
-      <h3>Guess the word</h3>
-      <p>Guess what? You're gonna have fun!</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game3'>
-      <img class='card-img' src="img/tbc.png" alt="">
-    </section>
-    <section class='game-desc'>
-      <h3>TBC</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game4'>
-      <img class='card-img' src="img/tbc.png" alt="">
-    </section>
-    <section class='game-desc'>
-      <h3>TBC</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game5'>
-      <img class='card-img' src="img/tbc.png" alt="">
-    </section>
-    <section class='game-desc'>
-      <h3>TBC</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game6'>
-      <img class='card-img' src="img/tbc.png" alt="">
-    </section>
-    <section class='game-desc'>
-      <h3>TBC</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-</section>
-<!--games catalog end-->
-  </main>
-  <footer>
-    <section class='center'>&copy; FunGam 2022</section>
-  </footer>
-  
-  <script src="index.js"></script>
-</body>
+        </i>
+
+        
+      </nav>
+      <!--nav end-->
+    </header>
+    <main>
+      <!--hero starts-->
+      <section class="hero">
+        <h1>
+          <a href="./index.html">FunGam</a
+          ><span id="span-h1">The place to game if you want some fun!</span>
+        </h1>
+      </section>
+      <!--hero ends-->
+
+      <!--intro start-->
+      <section class="intro">
+        <h2>Welcome to FunGam!</h2>
+        <p>Choose one of the games below to start playing.</p>
+      </section>
+      <!--intro end-->
+
+      <!--games catalog start-->
+      <section class="games-wrapper">
+        <article class="game-card" id="game1">
+          <section class="game-img">
+            <img
+              class="card-img"
+              src="img/index/ac-card.jpg"
+              alt="picture of Tom Nook"
+            />
+          </section>
+          <section class="game-desc">
+            <h3>Animal Crossing Cards</h3>
+            <p>Your lovely neighbours have some selfies for you. Find them all!</p>
+            <a class="card-btn" href="memory.html">Let's play</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game2">
+            <img
+              class="card-img"
+              src="img/index/ttt-card.png"
+              alt="picture of tic tac toe game"
+            />
+          </section>
+          <section class="game-desc">
+            <h3>Hit That Toe</h3>
+            <p>A punnier version of the classic tic tac toe game. Will you hit three toes in a row?</p>
+            <a class="card-btn" href="tic-tac-toe.html">Let's play</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game3">
+            <img class="card-img" src="img/index/tbc.png" alt="" />
+          </section>
+          <section class="game-desc">
+            <h3>TBC</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a class="card-btn" href="">Let's play</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game4">
+            <img class="card-img" src="img/index/tbc.png" alt="" />
+          </section>
+          <section class="game-desc">
+            <h3>TBC</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a class="card-btn" href="">Let's play</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game5">
+            <img class="card-img" src="img/index/tbc.png" alt="" />
+          </section>
+          <section class="game-desc">
+            <h3>TBC</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a class="card-btn" href="">Let's play</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game6">
+            <img class="card-img" src="img/index/tbc.png" alt="" />
+          </section>
+          <section class="game-desc">
+            <h3>TBC</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a class="card-btn" href="">Let's play</a>
+          </section>
+        </article>
+      </section>
+      <!--games catalog end-->
+    </main>
+    <footer>
+      <section class="center">&copy; FunGam 2022</section>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>

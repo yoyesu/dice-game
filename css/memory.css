@@ -1,13 +1,48 @@
-#grid{
+#memory-hero-img{
+  background-image: url(../img/memory/ac-hero.jpg);
+}
+
+#memo-h1{
+  color: rgb(43, 158, 211);
+}
+
+#blue-background{
+  background-color: rgb(142, 235, 241);
+}
+
+#rules-memory {
+  background-color: rgba(255, 255, 255, 0.849);
+  border: 3px dotted rgb(1, 218, 84);
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.grid{
   display: flex;
-  /* height: 400px;
-  width: 300px; */
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 3rem;
   
 }
 
+#score{
+  margin-left: 3rem;
+}
+
+#mem-result-section{
+  background-color: rgba(255, 255, 255, 0.849);
+  width: 90%;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  margin: 0 auto;
+  border: 3px dotted rgb(1, 218, 84);
+  border-radius: 10px;
+}
+
 .card-border{
-  border: 1px solid rgb(72, 245, 66);
+  border: 1px solid rgb(66, 245, 185);
 }

@@ -6,38 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/memory.css">
-  <title>Memory game</title>
+  <script
+      src="https://kit.fontawesome.com/2eb9dd0896.js"
+      crossorigin="anonymous"
+    ></script>
+  <title>Animal Crossing Memory Game - FunGam</title>
 </head>
-<body id='orange-background'>
+<body id='blue-background'>
   <header>
-<!--language dropdown start-->
-    <nav class='lang-dropdown'>
-      <a href="#" id='lang-btn'>Idioma</a>
-      <div class='dropdown-content'>
-        <a href='.memory-es.html' id='español'>Español</a>
-        <a href='.memory.html' id='english'>English</a>
-      </div>
-      <a href='.index.html' class='nav-option' id='nav-rules'>Home</a>
-      <a href='' class='nav-option'>Contact</a>
-    </nav>
-<!--language dropdown end-->
+<!--nav start-->
+<nav>
+  <i class="fa-solid fa-globe" id='lang-icon'>
+  <div class='dropdown' id="lang-drop">
+  <div class="dropdown-content" >
+      <a href="memory-es.html" id="español">Español</a>
+      <a href="memory.html" id="english">English</a>
+    </div>
+  </div>
+  </i> 
+
+  <i class="fa-solid fa-bars" id='pag-icon'>
+  <div class='dropdown' id="pages-drop">
+  <div class="dropdown-content" id='content-pages'>
+      <a href="./contact.html" class="nav-option">Contact</a>
+      <a href="./login-form.html" class="nav-option">Log in</a>
+      <a href="./signup-form.html" class="nav-option">Sign up</a>
+    </div>
+  </div>
+
+  </i>
+
+  
+</nav>
+<!--nav end-->
   </header>
   <main>
 <!--hero starts-->
-    <section class='hero' id='hero2'>
-      <h1>Memory game</h1>
+    <section class='hero' id='memory-hero-img'>
+      <h1 id='memo-h1'>Memory game</h1>
     </section>
 <!--hero ends-->
 
-<h3>Score: <span id='result'></span></h3>
+<!--rules start-->
+<section class='rules-container' id='rules-memory'>
+  <h3>Before you start:</h3>
+  <p>Six of your lovelyneighbours in Animal Crossing want to give you their selfie, but before... they want you to solve this game!</p>
+  <br>
+  <p id='good-messa'></p>
+</section>
+<!--rules end-->
+
+<!--game start-->
+<h3 id='score'>Score: <span id='result'></span></h3>
 
 <section class='grid'>
 
 </section>
-
+<!--game end-->
 
 <!--result start-->
-<section id='result-section'>
+<section id='mem-result-section'>
   <h2 id='result-container'></h2>
 </section>
 <!--result end-->
@@ -47,5 +75,6 @@
 </footer>
 
   <script src="./js/memory.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
