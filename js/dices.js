@@ -1,18 +1,26 @@
-let nickname = prompt("Please, enter your name");
-function username(){
-  if (nickname != null){
-    document.querySelector("#welc-messa").innerHTML = `Hello, ${nickname}. Let's play!`
-  }
-}
+// let nickname = prompt("Please, enter your name");
+// function username(){
+//   if (nickname != null){
+//     document.querySelector("#welc-messa").innerHTML = `Hello, ${nickname}. Let's play!`
+//   }
+// }
 
 // window.onload = username();
 
 function diceRoll(){
+//random number generator
   let dice1 = Math.floor(Math.random()*6 +1);
   document.querySelector('#dice1').innerHTML = dice1; //adding the numbers inside the squares
   let dice2 = Math.floor(Math.random()*6 +1);
     document.querySelector('#dice2').innerHTML = dice2;
-  let result = `${nickname}, you rolled a ${dice1} and a ${dice2}.`
+
+//personalizing experience if user is logged in
+  let result = `You rolled a ${dice1} and a ${dice2}.`
+  if ('username' in localStorage){
+    result = `${storedName}, you rolled a ${dice1} and a ${dice2}.`
+  }
+
+//gameplay
   if (dice1 === 6 && dice2 === 6) {
     document.querySelector('#result-container').innerHTML = `${result} You won a bear!`;
   } else if (dice1 === dice2) {

@@ -30,79 +30,33 @@
 <!--intro start-->
 <section class='intro'>
   <h2>Welcome to FunGam!</h2>
-  <p>Choose one of the games below to start playing.</p>
+  <p>Log in to start playing.</p>
+  <p>Is this your first time here? <a href='./signup-form.html'>Sign up</a> now.</p>
 </section>
 <!--intro end-->
 
-<!--games catalog start-->
-<section class='games-wrapper'>
-  <article class='game-card' id='game1'>
-    <section class='game-img'>
-      <img class='card-img' src="img/dice-card.jpg" alt="picture of dices">
-    </section>
-    <section class='game-desc'>
-      <h3>Dices</h3>
-      <p>Find out if you're on a roll!</p>
-      <a class='card-btn' href='dices.html'>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game2'>
-      <img class='card-img' src="img/guess-card.jpg" alt="picture of letters">
-    </section>
-    <section class='game-desc'>
-      <h3>Guess the word</h3>
-      <p>Guess what? You're gonna have fun!</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game3'>
-      <img class='card-img' src="img/tbc.png" alt="">
-    </section>
-    <section class='game-desc'>
-      <h3>TBC</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game4'>
-      <img class='card-img' src="img/tbc.png" alt="">
-    </section>
-    <section class='game-desc'>
-      <h3>TBC</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game5'>
-      <img class='card-img' src="img/tbc.png" alt="">
-    </section>
-    <section class='game-desc'>
-      <h3>TBC</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game6'>
-      <img class='card-img' src="img/tbc.png" alt="">
-    </section>
-    <section class='game-desc'>
-      <h3>TBC</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class='card-btn' href=''>Let's play</a>
-    </section>
-  </article>
-</section>
-<!--games catalog end-->
+<!--sign-up form start-->
+<div class="container">
+  <form id="contactForm" action="">
+    <h2 id='form-title'>Log in</h2>
+    <label for="username">Username</label>
+
+    <input type="text" id="in-username" name="username" maxlength="12" required/>
+
+    <label for="password">Password</label>
+
+    <input type="password" id="in-password" name="password" required/>
+
+    <input type="submit" value="Sign up" id="submit"/>
+  </form>
+</div>
+<!--sign-up form end-->
+
   </main>
   <footer>
     <section class='center'>&copy; FunGam 2022</section>
   </footer>
   
-  <script src="index.js"></script>
+  <script src="./sign-up-in.js"></script>
 </body>
 </html>

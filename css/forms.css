@@ -36,3 +36,11 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color:black;
 }
+
+.hidden{
+  display: none;
+}
+
+#block {
+  display: block;
+}
