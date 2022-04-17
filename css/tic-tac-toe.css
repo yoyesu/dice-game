@@ -1,3 +1,7 @@
+#orange-background{
+  background-color: rgba(255, 145, 0, 0.959);
+}
+
 #hero-ttt{
   background-image: url(../img/tic-tac-toe/ttt-hero.png);
 }
@@ -30,6 +34,24 @@
   height: 100px;
   background-color: white;
 }
+
+/*rules start*/
+.rules-container{
+  background-color: rgb(255, 205, 66);
+  padding: 2.5rem;
+}
+
+.rules-container h2, h3 {
+  padding-bottom: 1rem;
+}
+#good-messa{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/*rules end*/
 
 #result-section-ttt{
   background-color: rgb(248, 224, 145);

@@ -17,6 +17,10 @@ h1{
   text-transform: capitalize;
 }
 
+#orange-background{
+  background-color: rgba(255, 145, 0, 0.959);
+}
+
 .hidden{
   display: none;
 }
@@ -93,9 +97,6 @@ nav{
   font-size: 3.5rem;
   text-align: center;
   padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #span-h1{
@@ -114,7 +115,7 @@ nav{
 /*intro start*/
 .intro{
   text-align: center;
-  padding: 3rem 1rem 1rem;
+  padding: 1rem;
 }
 
 .intro h2{
@@ -132,7 +133,7 @@ nav{
 .game-card{
   background-color: rgb(235, 255, 164);
   width: 70%;
-  height: 370px;
+  height: fit-content;
   margin-bottom: 1rem;
   border-radius: 3px;
   box-shadow: 2px 2px 10px rgb(77, 197, 22);
@@ -151,10 +152,7 @@ nav{
   padding: 1rem;
   display: flex;
   flex-direction: column;
-}
-
-.game-desc h3{
-  padding-bottom: 0.5rem;
+  
 }
 
 .card-btn{
@@ -165,13 +163,51 @@ nav{
   align-self: center;
   color: black;
 }
-.card-btn:hover{
+.card-btn:visited{
   background-color: black;
   color: white;
 }
 /*game cards end*/
 
-/*card button starts*/
+/*rules start*/
+.rules-container{
+  background-color: rgb(255, 205, 66);
+  padding: 2.5rem;
+}
+
+.rules-container h2, h3 {
+  padding-bottom: 1rem;
+}
+#good-messa{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/*rules end*/
+
+/*dices start*/
+.dice-container{
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dice{
+  background-color: white;
+  border: 3px dotted rgb(218, 142, 1);
+  height: 100px;
+  width: 100px;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*dices end*/
+
+/*button starts*/
 .button-container{
   display: flex;
   justify-content: center;
@@ -183,7 +219,26 @@ button {
   margin-bottom: 1rem;
 }
 
-/*card button ends*/
+/*button ends*/
+
+/*result starts*/
+#result-section{
+  background-color: rgb(248, 224, 145);
+  width: 90%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  margin: 0 auto;
+  border: 3px dotted rgb(218, 142, 1);
+  border-radius: 10px;
+}
+#result-section h2{
+  margin-bottom: 1rem;
+}
+/*result ends*/
 
 /*footer starts*/
 footer{
@@ -197,43 +252,3 @@ footer{
   justify-content: center;
 }
 /*footer ends*/
-
-@media screen and (min-width: 768px){
-  .game-card{
-    width: 40%;
-    height: 400px;
-    margin-bottom: 2rem;
-  }
-  .hero{
-    height: 40vh;
-  }
-  .card-btn{
-    margin-top: 2rem;
-  }
-  .game-desc{
-    padding: 2rem;
-  }
-  #content-pages{
-    left: 42.1rem;
-  }
-  #arrow-btn{
-    margin-left: 1rem;
-  }
-}
-
-@media screen and (min-width: 992px){
-  .game-card{
-    width: 35%;
-  }
-  #pag-icon{
-    display: none;
-  }
-  #content-pages{
-    display: block;
-    color: white;
-  }
-}
-
-@media screen and (min-width: 1200px){
-  
-}
