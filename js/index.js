@@ -23,7 +23,10 @@ function scrollFunction() {
 }
 
 // When the user clicks on the button, scroll to the top of the document
-scrollBtn.addEventListener('click', topFunction);
+if (scrollBtn){
+  scrollBtn.addEventListener('click', topFunction);
+
+}
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }

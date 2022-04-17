@@ -29,9 +29,14 @@ h1{
 #arrow-btn{
   display: none;
   background-color: rgb(77, 197, 22);
-  position:sticky;
-  top: 0;
-  margin-left: 1.5rem;
+  position:fixed;
+  bottom: 20px;
+  right: 15px;
+}
+
+#arrow-btn:hover{
+  background-color: grey;
+  cursor: pointer;
 }
 /*general stuff end*/
 
@@ -47,7 +52,9 @@ header a{
 .fa-solid{
   color:white;
   font-size: larger;
+  cursor: pointer;
 }
+
 nav{
   padding: 1rem 0.5rem;
   margin: 0 1rem;
@@ -56,7 +63,6 @@ nav{
 }
 .dropdown{
   color:white;
-  /* background-color: grey; */
   margin-right: auto;
   position: relative;
   display: inline-block;
@@ -70,7 +76,11 @@ nav{
 }
 
 #content-pages{
-  left: 16.5rem;
+  right: 10px;
+}
+
+#drop-tablet{
+  display: none;
 }
 
 .dropdown-content a{
@@ -151,6 +161,7 @@ nav{
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  position:relative;
 }
 
 .game-desc h3{
@@ -228,12 +239,41 @@ footer{
   #pag-icon{
     display: none;
   }
-  #content-pages{
+  #drop-tablet{
     display: block;
     color: white;
+  }
+  .nav-option{
+    padding-left: 5rem;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .nav-option:hover{
+    color:grey;
   }
 }
 
 @media screen and (min-width: 1200px){
-  
+  .hero{
+    height: 60vh;
+    font-size: 5rem;
+  }
+  .games-wrapper{
+    
+    padding: 1rem 5rem 4rem 5rem;
+  }
+  .game-card{
+    width: 30%;
+  }
+  .nav-option{
+    padding-left: 7rem;
+    font-size: larger;
+  }
+  #arrow-btn{
+    width: 40px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    
+  }
 }

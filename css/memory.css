@@ -10,12 +10,25 @@
   background-color: rgb(142, 235, 241);
 }
 
+/*rules start*/
 #rules-memory {
   background-color: rgba(255, 255, 255, 0.849);
   border: 3px dotted rgb(1, 218, 84);
   margin: 2rem;
   border-radius: 10px;
+  padding: 1rem;
 }
+.rules-container h2, h3 {
+  padding-bottom: 1rem;
+}
+#good-messa{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*rules end*/
+
 
 .grid{
   display: flex;
@@ -43,6 +56,47 @@
   border-radius: 10px;
 }
 
+#reset-btn{
+  margin-top: 1rem;
+}
 .card-border{
   border: 1px solid rgb(66, 245, 185);
+}
+
+@media screen and (min-width: 514px){
+  #memo-h1{
+    font-size: 6rem;
+  }
+  #rules-memory {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #score{
+    margin-left: 215px;
+  }
+  .grid{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+  #mem-result-section{
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .fa-house{
+    display: none;
+  }
+  #score{
+    margin-left: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  #score{
+    margin-left: 400px;
+  }
 }

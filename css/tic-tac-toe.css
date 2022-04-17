@@ -24,8 +24,9 @@
 .grid{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 3rem 0 1.5rem;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
 }
 
 .square-style {
@@ -69,4 +70,36 @@
 #reset-btn-container{
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+  #ttt-h1 span{
+    color:black;
+    text-shadow: 3px 3px white;
+  }
+  .grid{
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+  }
+  #result-section-ttt{
+    width: 70%;
+
+  }
+  #rules-memory {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .fa-house{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  
 }

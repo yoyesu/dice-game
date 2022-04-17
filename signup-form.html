@@ -4,22 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="forms.css">
-  <title>Fungam</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <script
+      src="https://kit.fontawesome.com/2eb9dd0896.js"
+      crossorigin="anonymous"
+    ></script>
+  <title>Sign Up - FunGam</title>
 </head>
 <body>
   <header>
-<!--language dropdown start-->
-    <nav class='lang-dropdown'>
-      <a href="#" id='lang-btn'>Idioma</a>
-      <div class='dropdown-content'>
-        <a href='index-es.html' id='español'>Español</a>
-        <a href='index.html' id='english'>English</a>
-      </div>
-      <a href='prizes.html' class='nav-option'>Contact</a>
-    </nav>
-<!--language dropdown end-->
+<!--nav start-->
+<nav>
+  <i class="fa-solid fa-globe" id='lang-icon'>
+  <div class='dropdown' id="lang-drop">
+  <div class="dropdown-content" >
+      <a href="index-es.html" id="español">Español</a>
+      <a href="index.html" id="english">English</a>
+    </div>
+  </div>
+  </i> 
+
+  <i class="fa-solid fa-bars" id='pag-icon'>
+  <div class='dropdown' id="pages-drop">
+  <div class="dropdown-content" id='content-pages'>
+    <a href="./index.html" class="nav-option">Home</a>
+    <a href="./login-form.html" class="nav-option">Log in</a>
+    <a href="./contact.html" class="nav-option">Contact</a>
+    </div>
+  </div>
+
+  </i>
+  <div id='drop-tablet'>
+    <a href="./index.html" class="nav-option">Home</a>
+    <a href="./login-form.html" class="nav-option">Log in</a>
+    <a href="./contact.html" class="nav-option">Contact</a>
+  </div>
+  
+</nav>
+<!--nav end-->
   </header>
   <main>
 <!--hero starts-->
@@ -58,6 +81,7 @@
     <section class='center'>&copy; FunGam 2022</section>
   </footer>
   
-  <script src="./sign-up-in.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/sign-up-in.js"></script>
 </body>
 </html>
