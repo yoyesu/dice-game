@@ -67,45 +67,21 @@ const winningCombos = [
   [2, 4, 6]
   ];
 
-// function handleResultValidation() {
-//   let numberUser = userChoices.map(i=>Number(i));
-//   let numberComputer = computerChoices.map(i=>Number(i));
-//   winningCombos.forEach((e) =>{
-//     let a = e[0];
-//     let b = e[1];
-//     let c = e[2];
-//     if (numberUser.includes(a) && numberUser.includes(b) && numberUser.includes(c)){ 
-//       console.log('user wins');
-//     } else if (numberComputer.includes(a) && numberComputer.includes(b) && numberComputer.includes(c)){
-//       console.log('Sorry, you lost. Try again!');
-//     } else{
-
-//     }
-//   })
-// }
 function userValidation() {
-  let nextTurn = false;
+  let nextTurn = setTimeout(computerTurn, 1000);
   let numberUser = userChoices.map(i=>Number(i));
   winningCombos.forEach((e) =>{
     let a = e[0];
     let b = e[1];
     let c = e[2];
     if (numberUser.includes(a) && numberUser.includes(b) && numberUser.includes(c)){ 
-      console.log('user wins');
-      
+      messages.textContent = 'You won :( did you have fun hurting my toes? Shame on you and your cow';
+      clearTimeout(nextTurn);
     } else if (takenId.length === imgId.length){
-      console.log('This is a tie. Not bad, try again.');
-      
-    } else {
-      nextTurn = true;
-      
-      // setTimeout(messages.textContent = 'Not bad, now it\'s my turn. I\'ll protect my toes.', 500)
-      //I'll come back to this when i fix the winning logic issues
-    }
+      messages.textContent = 'This is a tie. Not bad, try again.';
+      clearTimeout(nextTurn);
+    } 
   })
-  if (nextTurn == true){
-    setTimeout(computerTurn, 1000)
-  }
 }
 
   function computerValidation() {
@@ -115,9 +91,9 @@ function userValidation() {
       let b = e[1];
       let c = e[2];
       if (numberComputer.includes(a) && numberComputer.includes(b) && numberComputer.includes(c)){
-        console.log('Sorry, you lost. Try again!');
+        messages.textContent = 'Sorry, you lost. Try again!';
       } else if (takenId.length === imgId.length){
-        console.log('This is a tie. Not bad, try again.');
+        messages.textContent = 'This is a tie. Not bad, try again.';
       } else {
         messages.textContent = 'Your turn, user.'
       }
