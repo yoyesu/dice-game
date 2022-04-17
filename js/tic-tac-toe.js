@@ -6,7 +6,6 @@ let squaresArray = ['','','','','','','','',''];
 let grid = document.querySelector('.grid');
 let chosenToeId = [];
 let imgId = [];
-// let turn = 'user';
 let takenId = [];
 let computerChoices = [];
 let userChoices = [];
@@ -36,28 +35,24 @@ function leaveMark(){
   let chosenToe = chosenToeId[0];
   toes[chosenToe].setAttribute('src','img/tic-tac-toe/hammer.png');
   chosenToeId = [];
-  handleResultValidation();
-  setTimeout(computerTurn, 1000);
+  userValidation();
+  // setTimeout(computerTurn, 1000);
 }
 
-/////turns////////
+/////computer turn////////
 
 function computerTurn(){
   let randomId = Math.floor((Math.random()*imgId.length));
   let randomIdString = randomId.toString();
-  console.log(randomIdString);
-  console.log(typeof randomIdString);
   let toes = document.querySelectorAll('img');
   if (!takenId.includes(randomIdString)){
     toes[randomId].setAttribute('src','img/tic-tac-toe/boots.png');
     takenId.push(randomIdString);
     computerChoices.push(randomId);
-  } else if (takenId.length === imgId.length){
-    
   } else{
       computerTurn();
     }
-    handleResultValidation();
+    computerValidation();
   }
 
 ///////////win logic////////
@@ -72,18 +67,24 @@ const winningCombos = [
   [2, 4, 6]
   ];
 
-// function findWinner(){
+// function handleResultValidation() {
 //   let numberUser = userChoices.map(i=>Number(i));
+//   let numberComputer = computerChoices.map(i=>Number(i));
 //   winningCombos.forEach((e) =>{
-//     if (e.includes(numberUser)){
-//       console.log('hello');
-//     }
-//     console.log(e);
-//     console.log(numberUser);
-//   });
-// }
+//     let a = e[0];
+//     let b = e[1];
+//     let c = e[2];
+//     if (numberUser.includes(a) && numberUser.includes(b) && numberUser.includes(c)){ 
+//       console.log('user wins');
+//     } else if (numberComputer.includes(a) && numberComputer.includes(b) && numberComputer.includes(c)){
+//       console.log('Sorry, you lost. Try again!');
+//     } else{
 
-function handleResultValidation() {
+//     }
+//   })
+// }
+function userValidation() {
+  let nextTurn = false;
   let numberUser = userChoices.map(i=>Number(i));
   winningCombos.forEach((e) =>{
     let a = e[0];
@@ -91,16 +92,38 @@ function handleResultValidation() {
     let c = e[2];
     if (numberUser.includes(a) && numberUser.includes(b) && numberUser.includes(c)){ 
       console.log('user wins');
+      
+    } else if (takenId.length === imgId.length){
+      console.log('This is a tie. Not bad, try again.');
+      
+    } else {
+      nextTurn = true;
+      
+      // setTimeout(messages.textContent = 'Not bad, now it\'s my turn. I\'ll protect my toes.', 500)
+      //I'll come back to this when i fix the winning logic issues
     }
   })
-  console.log('number user', numberUser);
-      // if (numberUser.includes(0) && numberUser.includes(1) && numberUser.includes(2) || numberUser.includes(3) && numberUser.includes(4) && numberUser.includes(5)){
-      //         console.log('user wins');
-              
-      //       }
+  if (nextTurn == true){
+    setTimeout(computerTurn, 1000)
+  }
 }
 
-// || (3 && 4 && 5) || (6 && 7 && 8) || (0 && 3 && 6) || (1 && 4 && 7) || (2 && 5 && 8) || (0 && 4 && 8) || (2 && 4 && 6)
+  function computerValidation() {
+    let numberComputer = computerChoices.map(i=>Number(i));
+    winningCombos.forEach((e) =>{
+      let a = e[0];
+      let b = e[1];
+      let c = e[2];
+      if (numberComputer.includes(a) && numberComputer.includes(b) && numberComputer.includes(c)){
+        console.log('Sorry, you lost. Try again!');
+      } else if (takenId.length === imgId.length){
+        console.log('This is a tie. Not bad, try again.');
+      } else {
+        messages.textContent = 'Your turn, user.'
+      }
+    });
+  };
+
 //////message//////
 
 let messages = document.querySelector('#result-container');
@@ -116,36 +139,11 @@ function resetFunction(){
   takenId = [];
   computerChoices = [];
   userChoices = [];
-}
+};
 
 
 
 ticTacBoard();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 })

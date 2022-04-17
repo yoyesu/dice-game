@@ -5,22 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/memory.css">
+  <link rel="stylesheet" href="./css/tic-tac-toe.css">
   <script
       src="https://kit.fontawesome.com/2eb9dd0896.js"
       crossorigin="anonymous"
     ></script>
-  <title>Animal Crossing Memory Game - FunGam</title>
+  <title>Hangman - FunGam</title>
 </head>
-<body id='blue-background'>
+<body id='orange-background'>
   <header>
 <!--nav start-->
 <nav>
   <i class="fa-solid fa-globe" id='lang-icon'>
   <div class='dropdown' id="lang-drop">
   <div class="dropdown-content" >
-      <a href="memory-es.html" id="español">Español</a>
-      <a href="memory.html" id="english">English</a>
+      <a href="tic-tac-toe-es.html" id="español">Español</a>
+      <a href="tic-tac-toe.html" id="english">English</a>
     </div>
   </div>
   </i> 
@@ -35,41 +35,39 @@
       <a href="./signup-form.html" class="nav-option">Sign up</a>
     </div>
   </div>
-
   </i>
-
-  
 </nav>
 <!--nav end-->
   </header>
   <main>
 <!--hero starts-->
-    <section class='hero' id='memory-hero-img'>
-      <h1 id='memo-h1'>Memory game</h1>
+    <section class='hero' id='hero-ttt'>
+      <h1 id='ttt-h1'>Hit that <span>toe</span></h1>
     </section>
 <!--hero ends-->
 
 <!--rules start-->
 <section class='rules-container' id='rules-memory'>
   <h3>Before you start:</h3>
-  <p>Six of your lovelyneighbours in Animal Crossing want to give you their selfie, but before... they want you to solve this game!</p>
+  <p>Rules are simple: connect three in a row before the computer does!<br>Go hit those toes!!</p>
   <br>
   <p id='good-messa'></p>
 </section>
 <!--rules end-->
 
-<!--game start-->
-<h3 id='score'>Score: <span id='result'></span></h3>
-
+<!--game starts-->
 <section class='grid'>
 
 </section>
-<!--game end-->
+<div id='reset-btn-container'>
+  <button id='reset-btn'>Reset</button>
+
+</div>
+<!--game ends-->
 
 <!--result start-->
-<section id='mem-result-section'>
+<section id='result-section-ttt'>
   <h2 id='result-container'></h2>
-  <button class='hidden' id='reset-btn'>Play again</button>
 </section>
 <!--result end-->
 </main>
@@ -77,7 +75,7 @@
   <section class='center'>&copy; FunGam 2022</section>
 </footer>
 
-  <script src="./js/memory.js"></script>
+  <script src="./js/tic-tac-toe.js"></script>
   <script src="./js/index.js"></script>
 </body>
 </html>

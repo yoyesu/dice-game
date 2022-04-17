@@ -85,8 +85,6 @@ function checkMatch(){
   } else if (cardsChosen[0] === cardsChosen[1]) {
     cards[optionOneId].style.visibility = 'hidden';
     cards[optionTwoId].style.visibility = 'hidden';
-    // cards[optionOneId].removeEventListener('click', flipCard);
-    // cards[optionTwoId].removeEventListener('click', flipCard); //i think i don't need this bc since I hid the element, it can't be clicked anymore
     cardsWon.push(cardsChosen);
     document.querySelector('#result-container').innerHTML = 'You found a match! Nice, keep going!';
   }else {
@@ -99,6 +97,7 @@ function checkMatch(){
   resultDisplay.textContent = cardsWon.length;
   if (cardsWon.length === cardsVillagers.length/2){
     document.querySelector('#result-container').innerHTML = 'Congratulations! You won! ';
+    resetBtn.removeAttribute('class', 'hidden');
   }
 }
 
@@ -112,5 +111,22 @@ function flipCard(){
     setTimeout(checkMatch, 700);
   }
 }
+
+
+//////////reset btn///////
+let resetBtn = document.querySelector('#reset-btn');
+resetBtn.addEventListener('click', resetGame);
+function resetGame (){
+  resetBtn.setAttribute('class', 'hidden');
+  cardsWon = [];
+  cardsVillagers.sort(() => 0.5 - Math.random());
+  let allCells = document.querySelectorAll('img');
+  let arrayCells = Array.from(allCells);
+  arrayCells.forEach((e) =>{
+    e.style.visibility = 'visible';
+    e.setAttribute('src', 'img/memory/card-back.png');
+  });
+}
+
 createBoard();
 })
