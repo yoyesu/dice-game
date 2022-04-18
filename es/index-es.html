@@ -1,107 +1,149 @@
 ﻿<!DOCTYPE html>
 <html lang="es-es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Fungam</title>
-</head>
-<body>
-  <header>
-<!--language dropdown start-->
-    <nav class='lang-dropdown'>
-      <a href="#" id="lang-btn">Language</a>
-      <div class='dropdown-content'>
-        <a href="index-es.html" id="español">Español</a> <a href="index.html" id="english">English</a>
-      </div>
-      <a href="" class="nav-option">Contacto</a>
-    </nav>
-<!--language dropdown end-->
-  </header>
-  <main>
-<!--hero starts-->
-    <section class='hero'>
-      <h1>Fungam<span id="span-h1">¡No podrás parar de jugar!</span></h1>
-    </section>
-<!--hero ends-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2eb9dd0896.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>FunGam - Mini juegos</title>
+  </head>
+  <body>
+    <header>
+      <!--nav start-->
+      <nav>
+        <i class="fa-solid fa-globe" id="lang-icon">
+          <div class="dropdown" id="lang-drop">
+            <div class="dropdown-content">
+              <a href="../es/index-es.html" id="español">Español</a>
+              <a href="../index.html" id="english">English</a>
+            </div>
+          </div>
+        </i>
+        <i class="fa-solid fa-bars" id="pag-icon">
+          <div class="dropdown" id="pages-drop">
+            <div class="dropdown-content" id="content-pages">
+              <a href="../es/login-form-es.html" class="nav-option">Iniciar sesión</a>
+              <a href="../es/signup-form-es.html" class="nav-option">Registrarse</a>
+              <a href="../es/contact-es.html" class="nav-option">Contacto</a>
+            </div>
+          </div>
+        </i>
+        <div id="drop-tablet">
+          <a href="../es/login-form-es.html" class="nav-option">Iniciar sesión</a>
+          <a href="../es/signup-form-es.html" class="nav-option">Registrarse</a>
+          <a href="../es/contact-es.html" class="nav-option">Contacto</a>
+        </div>
+      </nav>
+      <!--nav end-->
+    </header>
+    <main>
+      <!--hero starts-->
+      <section class="hero">
+        <h1>
+          <a href="../es/index-es.html">FunGam</a
+          ><span id="span-h1">¡No podrás parar de jugar!</span>
+        </h1>
+      </section>
+      <!--hero ends-->
 
-<!--intro start-->
-<section class='intro'>
-  <h2>¡Que te diviertas en FunGam!</h2>
-  <p>Elige uno de los siguientes juegos para comenzar.</p>
-</section>
-<!--intro end-->
+      <!--intro start-->
+      <section class="intro">
+        <h2>¡Explora nuestra gran selección de juegos!</h2>
+      </section>
+      <!--intro end-->
 
-<!--games catalog start-->
-<section class='games-wrapper'>
-  <article class='game-card' id='game1'>
-    <section class='game-img'>
-      <img class="card-img" src="img/dice-card.jpg" alt="imagen de dados"/>
-    </section>
-    <section class='game-desc'>
-      <h3>Dados</h3>
-      <p>¡Lánzate a jugar!</p>
-      <a class="card-btn" href="dices-es.html">¡A jugar!</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game2'>
-      <img class="card-img" src="img/guess-card.jpg" alt="imagen de letras"/>
-    </section>
-    <section class='game-desc'>
-      <h3>Adivina la palabra</h3>
-      <p>¿Adivina qué? ¡Que de queso!</p>
-      <a class="card-btn" href="">¡A jugar!</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game3'>
-      <img class="card-img" src="img/tbc.png" alt=""/>
-    </section>
-    <section class='game-desc'>
-      <h3>Próximamente</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class="card-btn" href="">¡A jugar!</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game4'>
-      <img class="card-img" src="img/tbc.png" alt=""/>
-    </section>
-    <section class='game-desc'>
-      <h3>Próximamente</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class="card-btn" href="">¡A jugar!</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game5'>
-      <img class="card-img" src="img/tbc.png" alt=""/>
-    </section>
-    <section class='game-desc'>
-      <h3>Próximamente</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class="card-btn" href="">¡A jugar!</a>
-    </section>
-  </article>
-  <article class='game-card'>
-    <section class='game-img' id='game6'>
-      <img class="card-img" src="img/tbc.png" alt=""/>
-    </section>
-    <section class='game-desc'>
-      <h3>Próximamente</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <a class="card-btn" href="">¡A jugar!</a>
-    </section>
-  </article>
-</section>
-<!--games catalog end-->
-  </main>
-  <footer>
-    <section class='center'>© FunGam 2022</section>
-  </footer>
-  
-  <script src="index-es.js"></script>
-</body>
+      <!--games catalog start-->
+
+      <button id="arrow-btn"><i class="fa-solid fa-arrow-up"></i></button>
+      <section class="games-wrapper">
+        <article class="game-card" id="game1">
+          <section class="game-img">
+            <img
+              class="card-img"
+              src="../img/index/ac-card.jpg"
+              alt="imagen de Tom Nook"
+            />
+          </section>
+          <section class="game-desc">
+            <h3>Cartas de Animal Crossing</h3>
+            <p>
+              Tus queridos vecinos tienen algunas selfies para ti. ¡Encuéntralas
+              todas!
+            </p>
+            <a class="card-btn" href="../es/memory-es.html">¡A jugar!</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game2">
+            <img
+              class="card-img"
+              src="../img/index/ttt-card.png"
+              alt="imagen de tres en raya"
+            />
+          </section>
+          <section class="game-desc">
+            <h3>Tres en raya</h3>
+            <p>
+              Una versión del tres en raya con un toque distinto. ¡Mucha suerte!
+            </p>
+            <a class="card-btn" href="../es/tic-tac-toe-es.html">¡A jugar!</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game3">
+            <img class="card-img" src="../img/index/tbc.png" alt="" />
+          </section>
+          <section class="game-desc">
+            <h3>El ahorcado</h3>
+            <p>
+              ¿Adivinarás la palabra antes de que sea demasiado tarde?
+              ¡Veámoslo!
+            </p>
+            <a class="card-btn" href="../es/hangman.html">¡A jugar!</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game4">
+            <img class="card-img" src="../img/index/tbc.png" alt="" />
+          </section>
+          <section class="game-desc">
+            <h3>Próximamente</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a class="card-btn" href="">¡A jugar!</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game5">
+            <img class="card-img" src="../img/index/tbc.png" alt="" />
+          </section>
+          <section class="game-desc">
+            <h3>Próximamente</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a class="card-btn" href="">¡A jugar!</a>
+          </section>
+        </article>
+        <article class="game-card">
+          <section class="game-img" id="game6">
+            <img class="card-img" src="../img/index/tbc.png" alt="" />
+          </section>
+          <section class="game-desc">
+            <h3>Próximamente</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a class="card-btn" href="">¡A jugar!</a>
+          </section>
+        </article>
+      </section>
+
+      <!--games catalog end-->
+    </main>
+    <footer>
+      <section class="center">© FunGam 2022</section>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
 </html>

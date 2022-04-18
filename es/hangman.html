@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/hangman.css">
+  <script
+      src="https://kit.fontawesome.com/2eb9dd0896.js"
+      crossorigin="anonymous"
+    ></script>
+  <title>El ahorcado - FunGam</title>
+</head>
+<body id='orange-background'>
+  <header>
+<!--nav start-->
+<nav>
+  <i class="fa-solid fa-globe" id="lang-icon">
+  <div class='dropdown' id="lang-drop">
+  <div class="dropdown-content" >
+      <a href="hangman-es.html" id="español">Español</a> <a href="hangman.html" id="english">English</a>
+    </div>
+  </div>
+  </i> <a href="index.html"><i class="fa-solid fa-house"></i></a> <i class="fa-solid fa-bars" id="pag-icon">
+  <div class='dropdown' id="pages-drop">
+  <div class="dropdown-content" id='content-pages'>
+      <a href="./contact.html" class="nav-option">Contacto</a> <a href="./login-form.html" class="nav-option">Iniciar sesión</a> <a href="./signup-form.html" class="nav-option">Registrarse</a>
+    </div>
+  </div>
+  </i>
+</nav>
+<!--nav end-->
+  </header>
+  <main>
+<!--hero starts-->
+    <section class='hero' id='hero-ttt'>
+      <h1 id='ttt-h1'>El ahorcado</span></h1>
+    </section>
+<!--hero ends-->
+
+<!--rules start-->
+<section class='rules-container' id='rules-memory'>
+  
+  <p id='good-messa'></p>
+</section>
+<!--rules end-->
+
+<!--game starts-->
+<div class="letter-div"></div>
+      <p>Usa una pista si necesitas ayuda</p>
+      <div class="hint-div hidden">
+        <p>Pista:-</p>
+        <p class="hint-txt">Sample Hint for test</p>
+      </div>
+      <div class="word-div"></div>
+      <h3>Vidas restantes: <span class="lives">5</span></h3>
+      <div class="row hint-div">
+        <button class="hint-btn">Pista</button>
+        <button class="reset-btn">Reiniciar</button>
+      </div>
+    </div>
+<!--game ends-->
+
+<!--result start-->
+<div class="notif hidden">
+  <h2>¡Has perdido!</h2>
+  <h3 class="notif-content">Has ganado</h3>
+  <h4>Palabra correcta: <span class="notif-span"></span></h4>
+  <button class="notif-btn">Jugar otra vez</button>
+</div>
+<!--result end-->
+</main>
+<footer>
+  <section class='center'>© FunGam 2022</section>
+</footer>
+
+  <script src="./js/hangman.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

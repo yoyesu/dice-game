@@ -1,0 +1,61 @@
+﻿tic tac toe
+
+messages.innerHTML = `${userName}, has ganado a costa de mis dedos... :( ¿Te parece bonito?`;
+      } else{
+        messages.innerHTML = 'Has ganado a costa de mis dedos... :( ¿Te parece bonito?';
+      }
+      clearTimeout(nextTurn);
+      clearTimeout(noNextTurnMessage);
+      
+    } else if (takenId.length === imgId.length){
+      if ('username' in localStorage){
+        messages.innerHTML = `¡Empate! Buena partida, ${userName}. Tienes más luces de lo que pensaba.`;
+      } else{
+        messages.innerHTML = "¡Empate! Buena partida. Tienes más luces de lo que pensaba.";
+
+messages.innerHTML = `¡Toma esa, ${userName}! ¡Mis dedos están a salvo!`;
+        } else{
+          messages.innerHTML = "¡Toma esa! ¡Mis dedos están a salvo!";
+        }
+        clearTimeout(noShowMessage);
+      } else if (takenId.length === imgId.length){
+        if ('username' in localStorage){
+          messages.innerHTML = `¡Empate! Buena partida, ${userName}. Tienes más luces de lo que pensaba.`;
+        } else{
+          messages.innerHTML = "¡Empate! Buena partida. Tienes más luces de lo que pensaba.";
+
+messages.innerHTML = `Tu turno, ¿podrás conmigo, ${userName}?`;
+  } else{
+    messages.innerHTML = "Tu turno, ¿podrás conmigo?";
+  }
+}
+
+function slowComputerTurnMessages () {
+  messages.innerHTML = 'Meh, me toca.'
+
+-----------------------------
+
+memory game
+
+
+cheerText.innerHTML = `${userName}, has elegido la misma carta. ¡Eso es trampa!`;
+    } else{
+      cheerText.innerHTML = "Has elegido la misma carta. ¡Eso es trampa!";
+cheerText.innerHTML = `¡Toma ya, ${userName}! ¡Encontraste una pareja!`;
+    } else{
+      cheerText.innerHTML = '¡Encontraste una pareja! ¡Sigue así!';
+
+cheerText.innerHTML = `Eh... ¿seguro que estás mirando, ${userName}?`;
+    } else{
+      cheerText.innerHTML = 'La memoria no es lo tuyo. ¡Sigue practicando!';
+
+finalCheer.innerHTML = `Recórcholis, ${userName}! ¡Has conseguido todas las selfies! ¡Invítanos a tu casa pronto!`;
+  } else{
+    finalCheer.innerHTML = '¡Recórcholis! ¡Has conseguido todas las selfies! ¡Invítanos a tu casa pronto!';
+----------------------------
+sign up in
+
+signupConfirm.textContent = `${storedName}, te has registrado.`;
+alert('El usuario o la contraseña no coinciden con ninguna cuenta. Vuelve a intentarlo.')
+  } else {
+    alert(`Hola, ${loginUsername}`)

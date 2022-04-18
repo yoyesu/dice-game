@@ -12,7 +12,10 @@ pagesIcon.addEventListener('click', () => {pagesDropdown.classList.toggle('visib
 scrollBtn = document.querySelector("#arrow-btn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+if (scrollBtn){
+  window.onscroll = function() {scrollFunction()};
+
+}
 
 function scrollFunction() {
   if (document.documentElement.scrollTop > 20) {

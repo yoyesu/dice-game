@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
 const cardsVillagers = [
   {
     name: 'bill',
-    img: 'img/memory/bill.png'
+    img: '../img/memory/bill.png'
   },
   {
     name: 'blanche',
-    img: 'img/memory/blanche.png'
+    img: '../img/memory/blanche.png'
   },
   {
     name: 'bonbon',
-    img: 'img/memory/bonbon.png'
+    img: '../img/memory/bonbon.png'
   },
   {
     name: 'butch',
-    img: 'img/memory/butch.png'
+    img: '../img/memory/butch.png'
   },
   {
     name: 'cranston',
-    img: 'img/memory/cranston.png'
+    img: '../img/memory/cranston.png'
   },
   {
     name: 'cube',
-    img: 'img/memory/cube.png'
+    img: '../img/memory/cube.png'
   },
   {
     name: 'bill',
-    img: 'img/memory/bill.png'
+    img: '../img/memory/bill.png'
   },
   {
     name: 'blanche',
-    img: 'img/memory/blanche.png'
+    img: '../img/memory/blanche.png'
   },
   {
     name: 'bonbon',
-    img: 'img/memory/bonbon.png'
+    img: '../img/memory/bonbon.png'
   },
   {
     name: 'butch',
-    img: 'img/memory/butch.png'
+    img: '../img/memory/butch.png'
   },
   {
     name: 'cranston',
-    img: 'img/memory/cranston.png'
+    img: '../img/memory/cranston.png'
   },
   {
     name: 'cube',
-    img: 'img/memory/cube.png'
+    img: '../img/memory/cube.png'
   },
 ]
 
@@ -63,7 +63,7 @@ let cardsWon = [];
 function createBoard(){
   for (let i = 0; i < cardsVillagers.length; i++){
     let card = document.createElement('img');
-    card.setAttribute('src', 'img/memory/card-back.png');
+    card.setAttribute('src', '../img/memory/card-back.png');
     card.setAttribute('data-id', i);
     card.setAttribute('class', 'card-border');
     card.addEventListener('click', flipCard);
@@ -81,12 +81,12 @@ function checkMatch(){
   let optionOneId = cardsChosenId[0];
   let optionTwoId = cardsChosenId[1];
   if (optionOneId == optionTwoId) {
-    cards[optionOneId].setAttribute('src','img/memory/card-back.png');
-    cards[optionTwoId].setAttribute('src','img/memory/card-back.png');
+    cards[optionOneId].setAttribute('src','../img/memory/card-back.png');
+    cards[optionTwoId].setAttribute('src','../img/memory/card-back.png');
     if ('username' in localStorage){
-      cheerText.innerHTML = `${userName}, you picked the same card. Don't cheat!`;
+      cheerText.innerHTML = `${userName}, has elegido la misma carta. ¡Eso es trampa!`;
     } else{
-      cheerText.innerHTML = "You picked the same card. Don't cheat!";
+      cheerText.innerHTML = "Has elegido la misma carta. ¡Eso es trampa!";
     }
     setTimeout(clearCheer, 1200);
   } else if (cardsChosen[0] === cardsChosen[1]) {
@@ -94,18 +94,18 @@ function checkMatch(){
     cards[optionTwoId].style.visibility = 'hidden';
     cardsWon.push(cardsChosen);
     if ('username' in localStorage){
-      cheerText.innerHTML = `Nice, ${userName}! You found a match!`;
+      cheerText.innerHTML = `¡Toma ya, ${userName}! ¡Encontraste una pareja!`;
     } else{
-      cheerText.innerHTML = 'You found a match! Nice, keep going!';
+      cheerText.innerHTML = '¡Encontraste una pareja! ¡Sigue así!';
     }
     setTimeout(clearCheer, 1200);
   }else {
-    cards[optionOneId].setAttribute('src','img/memory/card-back.png');
-    cards[optionTwoId].setAttribute('src','img/memory/card-back.png');
+    cards[optionOneId].setAttribute('src','../img/memory/card-back.png');
+    cards[optionTwoId].setAttribute('src','../img/memory/card-back.png');
     if ('username' in localStorage){
-      cheerText.innerHTML = `Uh... you sure you can find them all, ${userName}?`;
+      cheerText.innerHTML = `Eh... ¿seguro que estás mirando, ${userName}?`;
     } else{
-      cheerText.innerHTML = 'Your memory game is weak. Keep practicing!';
+      cheerText.innerHTML = 'La memoria no es lo tuyo. ¡Sigue practicando!';
     }
     setTimeout(clearCheer, 1200);
   }
@@ -125,9 +125,9 @@ function clearCheer (){
 
 function slowFinalCheer () {
   if ('username' in localStorage){
-    finalCheer.innerHTML = `What a star, ${userName}! You found all of our selfies! Invite us over to your place soon!`;
+    finalCheer.innerHTML = `Recórcholis, ${userName}! ¡Has conseguido todas las selfies! ¡Invítanos a tu casa pronto!`;
   } else{
-    finalCheer.innerHTML = 'What a star! You found all of our selfies! Invite us over to your place soon!';
+    finalCheer.innerHTML = '¡Recórcholis! ¡Has conseguido todas las selfies! ¡Invítanos a tu casa pronto!';
   }
   finalPopup.removeAttribute('class', 'hidden');
 }
@@ -155,7 +155,7 @@ function resetGame (){
   let arrayCells = Array.from(allCells);
   arrayCells.forEach((e) =>{
     e.style.visibility = 'visible';
-    e.setAttribute('src', 'img/memory/card-back.png');
+    e.setAttribute('src', '../img/memory/card-back.png');
   });
 }
 

@@ -20,7 +20,7 @@ function ticTacBoard (){
     gridElements.setAttribute('class', 'square-style');
     gridImg.setAttribute('data-id', i);
     imgId.push(i);
-    gridImg.setAttribute('src', 'img/tic-tac-toe/toe.png');
+    gridImg.setAttribute('src', '../img/tic-tac-toe/toe.png');
     gridImg.addEventListener('click', leaveMark);
   }
 }
@@ -33,7 +33,7 @@ function leaveMark(){
   takenId.push(toesId);
   userChoices.push(toesId);
   let chosenToe = chosenToeId[0];
-  toes[chosenToe].setAttribute('src','img/tic-tac-toe/hammer.png');
+  toes[chosenToe].setAttribute('src','../img/tic-tac-toe/hammer.png');
   chosenToeId = [];
   userValidation();
 }
@@ -45,7 +45,7 @@ function computerTurn(){
   let randomIdString = randomId.toString();
   let toes = document.querySelectorAll('img');
   if (!takenId.includes(randomIdString)){
-    toes[randomId].setAttribute('src','img/tic-tac-toe/boots.png');
+    toes[randomId].setAttribute('src','../img/tic-tac-toe/boots.png');
     takenId.push(randomIdString);
     computerChoices.push(randomId);
   } else{
@@ -77,18 +77,18 @@ function userValidation() {
 
     if (numberUser.includes(a) && numberUser.includes(b) && numberUser.includes(c)){ 
       if ('username' in localStorage){
-        messages.innerHTML = `You won, ${userName} :( did you have fun hurting my toes? Shame on you and your cow`;
+        messages.innerHTML = `${userName}, has ganado a costa de mis dedos... :( ¿Te parece bonito?`;
       } else{
-        messages.innerHTML = 'You won :( did you have fun hurting my toes? Shame on you and your cow';
+        messages.innerHTML = 'Has ganado a costa de mis dedos... :( ¿Te parece bonito?';
       }
       clearTimeout(nextTurn);
       clearTimeout(noNextTurnMessage);
       
     } else if (takenId.length === imgId.length){
       if ('username' in localStorage){
-        messages.innerHTML = `A tie! That was a good game, ${userName}. You're smarter than I thought.`;
+        messages.innerHTML = `¡Empate! Buena partida, ${userName}. Tienes más luces de lo que pensaba.`;
       } else{
-        messages.innerHTML = "A tie! That was a good game. You're smarter than I thought.";
+        messages.innerHTML = "¡Empate! Buena partida. Tienes más luces de lo que pensaba.";
       }
       clearTimeout(nextTurn);
       clearTimeout(noNextTurnMessage);
@@ -106,16 +106,16 @@ function userValidation() {
       let c = e[2];
       if (numberComputer.includes(a) && numberComputer.includes(b) && numberComputer.includes(c)){
         if ('username' in localStorage){
-          messages.innerHTML = `Take that, ${userName}! My toes are safe!`;
+          messages.innerHTML = `¡Toma esa, ${userName}! ¡Mis dedos están a salvo!`;
         } else{
-          messages.innerHTML = "Take that! My toes are safe!";
+          messages.innerHTML = "¡Toma esa! ¡Mis dedos están a salvo!";
         }
         clearTimeout(noShowMessage);
       } else if (takenId.length === imgId.length){
         if ('username' in localStorage){
-          messages.innerHTML = `A tie! That was a good game, ${userName}. You're smarter than I thought.`;
+          messages.innerHTML = `¡Empate! Buena partida, ${userName}. Tienes más luces de lo que pensaba.`;
         } else{
-          messages.innerHTML = "A tie! That was a good game. You're smarter than I thought.";
+          messages.innerHTML = "¡Empate! Buena partida. Tienes más luces de lo que pensaba.";
         }
         clearTimeout(noShowMessage);
       } 
@@ -128,14 +128,14 @@ let messages = document.querySelector('#result-container');
 
 function slowNextTurnMessages () {
   if ('username' in localStorage){
-    messages.innerHTML = `Show me what you've got, ${userName}! `;
+    messages.innerHTML = `Tu turno, ¿podrás conmigo, ${userName}?`;
   } else{
-    messages.innerHTML = "Show me what you've got.";
+    messages.innerHTML = "Tu turno, ¿podrás conmigo?";
   }
 }
 
 function slowComputerTurnMessages () {
-  messages.innerHTML = 'Not bad, my turn.'
+  messages.innerHTML = 'Meh, me toca.'
 }
 ///reset button////
 
@@ -144,7 +144,7 @@ resetBtn.addEventListener('click', resetFunction);
 function resetFunction(){
   let allCells = document.querySelectorAll('img');
   let arrayCells = Array.from(allCells);
-  arrayCells.forEach((e) =>{e.setAttribute('src', 'img/tic-tac-toe/toe.png')});
+  arrayCells.forEach((e) =>{e.setAttribute('src', '../img/tic-tac-toe/toe.png')});
   takenId = [];
   computerChoices = [];
   userChoices = [];

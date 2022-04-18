@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <script
+      src="https://kit.fontawesome.com/2eb9dd0896.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contacto - FunGam</title>
+  </head>
+  <body>
+    <header>
+      <!--nav start-->
+      <nav>
+        <i class="fa-solid fa-globe" id="lang-icon">
+          <div class="dropdown" id="lang-drop">
+            <div class="dropdown-content">
+              <a href="../es/contact-es.html" id="español">Español</a>
+              <a href="../contact.html" id="english">English</a>
+            </div>
+          </div>
+        </i>
+        <a href="../es/index-es.html"><i class="fa-solid fa-house"></i></a>
+        <i class="fa-solid fa-bars" id="pag-icon">
+          <div class="dropdown" id="pages-drop">
+            <div class="dropdown-content" id="content-pages">
+              <a href="../es/index-es.html" class="nav-option">Inicio</a>
+              <a href="../es/login-form-es.html" class="nav-option">Iniciar sesión</a>
+              <a href="../es/signup-form-es.html" class="nav-option">Registrarse</a>
+              <a href="../es/contact-es.html" class="nav-option">Contacto</a>
+            </div>
+          </div>
+        </i>
+        <div id="drop-tablet">
+          <a href="../es/index-es.html" class="nav-option">Inicio</a>
+          <a href="../es/login-form-es.html" class="nav-option">Iniciar sesión</a>
+          <a href="../es/contact-es.html" class="nav-option">Contacto</a>
+        </div>
+      </nav>
+      <!--nav end-->
+    </header>
+    <main>
+      <!--hero starts-->
+      <section class="hero">
+        <h1>FunGam<span id="span-h1">¡No podrás parar de jugar!</span></h1>
+      </section>
+      <!--hero ends-->
+
+      <!--intro start-->
+      <section class="intro">
+        <h2>¡Déjanos tus comentarios!</h2>
+        <p>
+          Nos encantaría que nos dieras tu opinión.<br />¿Crees que falta algún
+          juego? ¿Has notado algún problema en alguno de los juegos? Escríbenos
+          y le echaremos un vistazo.
+        </p>
+      </section>
+      <!--intro end-->
+
+      <!--contact form start-->
+      <div class="container">
+        <h2 id="up-confirm"></h2>
+        <form id="contactForm" action="">
+          <h2 id="upform-title">Contáctanos</h2>
+          <label for="username">Nombre</label>
+
+          <input
+            type="text"
+            id="up-username"
+            name="username"
+            maxlength='"12" required/'
+          />
+          <label for="email">Correo</label>
+
+          <input type="email" id="email" name='"email" required/' />
+
+          <label for="comment">Tu mensaje</label>
+
+          <textarea id="comment" required></textarea>
+
+          <input type="submit" value="Enviar" id="up-submit" />
+        </form>
+      </div>
+      <!--contact form end-->
+    </main>
+    <footer>
+      <section class="center">© FunGam 2022</section>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

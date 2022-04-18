@@ -1,4 +1,9 @@
-#form-title {
+.intro{
+  width: 500px;
+  margin: 0 auto;
+}
+
+#upform-title {
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -7,7 +12,7 @@ label {
   font-weight: normal;
 }
 .container {
-  width: 400px;
+  width: 75%;
   background-color: rgb(243, 243, 243);
   border-radius: 10px;
   margin: 30px auto;
@@ -43,4 +48,26 @@ input[type=submit]:hover {
 
 #block {
   display: block;
+}
+
+@media screen and (min-width: 768px){
+  .container {
+    width: 50%;
+    
+  }
+}
+
+@media screen and (min-width: 992px){
+  .container {
+    width: 45%;
+  }
+  .fa-house{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .container {
+    width: 30%;
+  }
 }

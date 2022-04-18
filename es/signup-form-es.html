@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <script
+      src="https://kit.fontawesome.com/2eb9dd0896.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Registrarse - FunGam</title>
+  </head>
+  <body>
+    <header>
+      <!--nav start-->
+      <nav>
+        <i class="fa-solid fa-globe" id="lang-icon">
+          <div class="dropdown" id="lang-drop">
+            <div class="dropdown-content">
+              <a href="../es/signup-form-es.html" id="español">Español</a>
+              <a href="../signup-form.html" id="english">English</a>
+            </div>
+          </div>
+        </i>
+        <i class="fa-solid fa-bars" id="pag-icon">
+          <div class="dropdown" id="pages-drop">
+            <div class="dropdown-content" id="content-pages">
+              <a href="../es/index-es.html" class="nav-option">Inicio</a>
+              <a href="../es/login-form-es.html" class="nav-option">Iniciar sesión</a>
+              <a href="../es/contact-es.html" class="nav-option">Contacto</a>
+            </div>
+          </div>
+        </i>
+        <div id="drop-tablet">
+          <a href="../es/index-es.html" class="nav-option">Inicio</a>
+          <a href="../es/login-form-es.html" class="nav-option">Iniciar sesión</a>
+          <a href="../es/contact-es.html" class="nav-option">Contacto</a>
+        </div>
+      </nav>
+      <!--nav end-->
+    </header>
+    <main>
+      <!--hero starts-->
+      <section class="hero">
+        <h1>FunGam<span id="span-h1">¡No podrás parar de jugar!</span></h1>
+      </section>
+      <!--hero ends-->
+
+      <!--intro start-->
+      <section class="intro">
+        <h2>¡Que te diviertas en FunGam!</h2>
+        <p>Regístrate ahora para comenzar a jugar.</p>
+        <br />
+        <p>
+          ¿Nos conocemos de antes?
+          <a href="../es/login-form-es.html">Inicia sesión</a>.
+        </p>
+      </section>
+      <!--intro end-->
+
+      <!--sign-up form start-->
+      <div class="container">
+        <h2 id="up-confirm"></h2>
+        <form id="contactForm" action="">
+          <h2 id="upform-title">Registrarse</h2>
+          <label for="username">Usuario</label>
+
+          <input
+            type="text"
+            id="up-username"
+            name="username"
+            maxlength='"12" required/'
+          />
+
+          <label for="password">Contraseña</label>
+
+          <input
+            type="password"
+            id="up-password"
+            name="password"
+            minlength="8"
+            maxlength="'12' required/"
+          />
+
+          <input type="submit" value="Registrarse" id="up-submit" />
+        </form>
+      </div>
+      <!--sign-up form end-->
+    </main>
+    <footer>
+      <section class="center">© FunGam 2022</section>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/es/sign-up-in-es.js"></script>
+  </body>
+</html>
