@@ -1,5 +1,5 @@
 .intro{
-  width: 500px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -55,14 +55,18 @@ input[type=submit]:hover {
     width: 50%;
     
   }
+  .intro{
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 992px){
   .container {
     width: 45%;
   }
-  .fa-house{
-    display: none;
+  .intro{
+    width: 6
+    55%;
   }
 }
 

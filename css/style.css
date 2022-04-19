@@ -2,11 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 /*general stuff: applies to more than one section*/
+
+html {
+  height: 100%;
+}
 body{
   background-color: rgb(225, 252, 151);
+  -moz-box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 80px;
 }
 a{
   text-decoration: none;
@@ -199,13 +208,14 @@ button {
 /*footer starts*/
 footer{
   margin-top: 2rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .center{
   background-color: white;
-  height: 3rem;
   padding: 1rem;
-  display:flex;
-  justify-content: center;
+  text-align: center;
 }
 /*footer ends*/
 
@@ -230,6 +240,7 @@ footer{
   #arrow-btn{
     margin-left: 1rem;
   }
+  
 }
 
 @media screen and (min-width: 992px){
@@ -250,6 +261,9 @@ footer{
   }
   .nav-option:hover{
     color:grey;
+  }
+  #home-icon{
+    display: none;
   }
 }
 
