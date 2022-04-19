@@ -84,7 +84,7 @@ function userValidation() {
       clearTimeout(nextTurn);
       clearTimeout(noNextTurnMessage);
       
-    } else if (takenId.length === imgId.length){
+    } else if ((takenId.length === imgId.length) && (!numberUser.includes(a) && !numberUser.includes(b) && !numberUser.includes(c))){
       if ('username' in localStorage){
         messages.innerHTML = `A tie! That was a good game, ${userName}. You're smarter than I thought.`;
       } else{
