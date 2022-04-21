@@ -68,7 +68,7 @@ const winningCombos = [
 
 function userValidation() {
   let nextTurn = setTimeout(computerTurn, 1200);
-  let noNextTurnMessage = setTimeout(slowComputerTurnMessages, 700);
+  let noNextTurnMessage = setTimeout(slowComputerTurnMessages, 500);
   let numberUser = userChoices.map(i=>Number(i));
   winningCombos.forEach((e) =>{
     let a = e[0];

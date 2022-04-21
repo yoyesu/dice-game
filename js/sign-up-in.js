@@ -17,15 +17,25 @@ function storeRegister(event){
   signupConfirm.textContent = `${storedName}, you are successfully signed up.`;
 }
 
+/// function to check if you're signed up
 
-function checkLogin(){
+let logInBtn = document.querySelector('#submit-log-in');
 
+if (logInBtn){
+  logInBtn.addEventListener('click', checkLogin);
+}
+
+function checkLogin(event){
+  event.preventDefault();
   let loginUsername = document.querySelector('#in-username');
   let loginPassword = document.querySelector('#in-password');
 
+  document.querySelector('#contactForm').style.visibility = 'hidden';
+  let signupConfirm = document.querySelector('#up-confirm');
+
   if (loginUsername.value != storedName || loginPassword.value != storedPassword){
-    alert('The username or password do not match any account. Please, use a different one.')
+    signupConfirm.textContent = 'The username or password do not match any account. Please, use a different one.';
   } else {
-    alert(`Welcome, ${loginUsername}`)
+    signupConfirm.textContent = `Welcome, ${loginUsername.value}`;
   }
 }
