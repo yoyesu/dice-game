@@ -39,4 +39,13 @@ function checkLogin(event){
   }
 }
 
-console.log(localStorage);
+/////////confirmation of contact form submit//////////
+
+let contactConfirm = document.querySelector('#submit-confirmation');
+let contactSubmit = document.querySelector('#conc-submit');
+
+if(contactSubmit){
+  contactSubmit.addEventListener('click', (event) => {
+    event.preventDefault();
+    contactConfirm.innerHTML = '¡Gracias!'});
+}

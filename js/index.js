@@ -5,8 +5,8 @@ let pagesDropdown = document.querySelector('#pages-drop');
 
 langDropdown.setAttribute('class', 'hidden');
 pagesDropdown.setAttribute('class', 'hidden');
-langIcon.addEventListener('click', () => {langDropdown.classList.toggle('visible')})
-pagesIcon.addEventListener('click', () => {pagesDropdown.classList.toggle('visible')})
+langIcon.addEventListener('click', () => {langDropdown.classList.toggle('visible')});
+pagesIcon.addEventListener('click', () => {pagesDropdown.classList.toggle('visible')});
 
 ///////scroll to the top btn/////////
 scrollBtn = document.querySelector("#arrow-btn");

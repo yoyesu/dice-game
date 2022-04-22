@@ -39,3 +39,14 @@ function checkLogin(event){
     signupConfirm.textContent = `Welcome, ${loginUsername.value}`;
   }
 }
+
+/////////confirmation of contact form submit//////////
+
+let contactConfirm = document.querySelector('#submit-confirmation');
+let contactSubmit = document.querySelector('#conc-submit');
+
+if(contactSubmit){
+  contactSubmit.addEventListener('click', (event) => {
+    event.preventDefault();
+    contactConfirm.innerHTML = 'Thank you!'});
+}
