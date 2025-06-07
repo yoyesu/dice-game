@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+export const hangmanView = {
+    template: `
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,13 +55,16 @@
     </div>
     <!--result end-->
 </main>
-<footer>
-    <section class='center'>&copy; FunGam 2022</section>
-</footer>
+<footer-component></footer-component>
 
 <script src="./js/hangman.js"></script>
 <script src="./js/nav-component.js"></script>
 <script src="js/index.js"></script>
 <script src="js/index-vue.js"></script>
 </body>
-</html>
+`,
+
+    mounted() {
+
+    }
+}

@@ -1,5 +1,5 @@
 import {router} from "./view-router.js";
-import {NavComponent} from "./nav-component.js";
+import {NavComponent} from "./components/nav-component.js";
 import {FooterComponent} from "./components/footer.js";
 
 const { createApp } = Vue;

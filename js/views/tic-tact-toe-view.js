@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+export const ticTactToeView = {
+    template: `
+    <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,36 +14,7 @@
 </head>
 <body id='orange-background'>
   <header>
-<!--nav start-->
-<nav>
-  <i class="fa-solid fa-globe" id='lang-icon'>
-  <div class='dropdown' id="lang-drop">
-  <div class="dropdown-content" >
-      <a href="es/tic-tac-toe-es.html" id="español">Español</a>
-      <a href="tic-tac-toe.html" id="english">English</a>
-    </div>
-  </div>
-  </i> 
-
-  <a href='index.html' id='home-icon'><i class="fa-solid fa-house"></i></a>
-
-  <i class="fa-solid fa-bars" id='pag-icon'>
-  <div class='dropdown' id="pages-drop">
-  <div class="dropdown-content" id='content-pages'>
-    <a href="./login-form.html" class="nav-option">Log in</a>
-    <a href="./signup-form.html" class="nav-option">Sign up</a>
-    <a href="./contact.html" class="nav-option">Contact</a>
-    </div>
-  </div>
-  </i>
-  <div id='drop-tablet'>
-    <a href="./login-form.html" class="nav-option">Log in</a>
-    <a href="./signup-form.html" class="nav-option">Sign up</a>
-    <a href="./contact.html" class="nav-option">Contact</a>
-  </div>
-  
-</nav>
-<!--nav end-->
+    <nav-component></nav-component>
   </header>
   <main>
 <!--hero starts-->
@@ -77,12 +48,15 @@
 </section>
 <!--result end-->
 </main>
-<footer>
-  <section class='center'>&copy; FunGam 2022</section>
-</footer>
+<footer-component></footer-component>
 
   <script src="./js/tic-tac-toe.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/sign-up-in.js"></script>
 </body>
-</html>
+`,
+
+    mounted() {
+
+    }
+}
