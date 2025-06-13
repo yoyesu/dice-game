@@ -14,18 +14,18 @@ export const NavComponent = {
         <div class='dropdown' id="pages-drop">
         <div class="dropdown-content" id='content-pages'>
         <router-link to="/" class="nav-option">Home</router-link>
-          <a href="../../login-form.html" class="nav-option">Log in</a>
-          <a href="../../signup-form.html" class="nav-option">Sign up</a>
-          <a href="../../contact.html" class="nav-option">Contact</a>
+          <router-link to="/login" class="nav-option">Log in</router-link>
+          <router-link to="/signup" class="nav-option">Sign up</router-link>
+          <router-link to="/contact" class="nav-option">Contact</router-link>
           </div>
         </div>
 
         </i>
         <div id='drop-tablet'>
         <router-link to="/" class="nav-option">Home</router-link>
-          <a href="../../login-form.html" class="nav-option">Log in</a>
-          <a href="../../signup-form.html" class="nav-option">Sign up</a>
-          <a href="../../contact.html" class="nav-option">Contact</a>
+          <router-link to="/login" class="nav-option">Log in</router-link>
+          <router-link to="/signup" class="nav-option">Sign up</router-link>
+          <router-link to="/contact" class="nav-option">Contact</router-link>
         </div>
         
       </nav>`,

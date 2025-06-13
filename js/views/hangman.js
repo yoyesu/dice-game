@@ -1,18 +1,5 @@
 export const hangmanView = {
     template: `
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/hangman.css">
-    <script
-            src="https://kit.fontawesome.com/2eb9dd0896.js"
-            crossorigin="anonymous"
-    ></script>
-    <title>Hangman - FunGam</title>
-</head>
-<body id='orange-background'>
 <header>
     <nav-component></nav-component>
 </header>
@@ -56,12 +43,6 @@ export const hangmanView = {
     <!--result end-->
 </main>
 <footer-component></footer-component>
-
-<script src="./js/hangman.js"></script>
-<script src="./js/nav-component.js"></script>
-<script src="js/index.js"></script>
-<script src="js/index-vue.js"></script>
-</body>
 `,
 
     mounted() {
